@@ -12,7 +12,7 @@ VisualizeData(tree, cleaned.discrete)
 #First, start basic. What is the rate of evolution of your trait on the tree? 
 
 BM1 <- fitContinuous(tree, cleaned.continuous, model="BM")
-print(paste("The rate of evolution is", _____, "in units of", _______))
+print(paste("The rate of evolution is", BM1$rate.of.evolution, "in units of", _______))
 #Important: What are the rates of evolution? In what units?
 OU1 <- fitContinuous(tree, cleaned.continuous, model="OU")
 par(mfcol(c(1,2)))
